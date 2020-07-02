@@ -8,6 +8,8 @@ public class Recursion {
         return Math.abs(m)+Math.abs(RecMult(m,Math.abs(n)-1));  // If both multiplier have the same signs
     }
     // Exercise 2 Recursive Palindrome
+    // This method avoid using String.Split() due to split creating an array and cause the runtime to be O(n) in the
+    // minimum
     static boolean RecPalindrome(String s ) {
         // Run first check
         boolean isPalin = (s.substring(0, 1).equals(s.substring(s.length()-1)));
