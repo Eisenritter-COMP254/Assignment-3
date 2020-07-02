@@ -4,6 +4,7 @@ public class Test{
         Test2();
     }
 
+    // Test cases for multiplication
     static void Test1(){
         int result1 = Recursion.RecMult(5,6);
         int result2 = Recursion.RecMult(5,-6);
@@ -15,6 +16,7 @@ public class Test{
         System.out.println(result4);
     }
 
+    // Test Cases for Palindrome
     static void Test2(){
         String test = "abcdeedcba";
         String test2 = "cookies";
@@ -32,14 +34,14 @@ public class Test{
         System.out.println(test6.substring(test.length()-1));
         System.out.println(test6.substring(1,test.length()-1));
 
-        System.out.println(Recursion.RecPalindrome(test)?"is Palindrome":"isn't Palindrome");
-        System.out.println(Recursion.RecPalindrome(test2)?"is Palindrome":"isn't Palindrome");
-        System.out.println(Recursion.RecPalindrome(test3)?"is Palindrome":"isn't Palindrome");
-        System.out.println(Recursion.RecPalindrome(test4)?"is Palindrome":"isn't Palindrome");
-        System.out.println(Recursion.RecPalindrome(test5)?"is Palindrome":"isn't Palindrome");
-        System.out.println(Recursion.RecPalindrome(test6)?"is Palindrome":"isn't Palindrome");
-        System.out.println(Recursion.RecPalindrome(test7)?"is Palindrome":"isn't Palindrome");
-        System.out.println(Recursion.RecPalindrome(test8)?"is Palindrome":"isn't Palindrome");
-        System.out.println(Recursion.RecPalindrome(test9)?"is Palindrome":"isn't Palindrome");
+        System.out.println(Recursion.RecPalindrome(test)?test+" is Palindrome":test+" isn't Palindrome");
+        System.out.println(Recursion.RecPalindrome(test2)?test2+" is Palindrome":test2+" isn't Palindrome");
+        System.out.println(Recursion.RecPalindrome(test3)?test3+" is Palindrome":test3+" isn't Palindrome");
+        System.out.println(Recursion.RecPalindrome(test4)?test4+" is Palindrome":test4+" isn't Palindrome");
+        System.out.println(Recursion.RecPalindrome(test5)?test5+" is Palindrome":test5+" isn't Palindrome");
+        System.out.println(Recursion.RecPalindrome(test6)?test6+" is Palindrome":test6+" isn't Palindrome");
+        System.out.println(Recursion.RecPalindrome(test7)?test7+" is Palindrome":test7+" isn't Palindrome");
+        System.out.println(Recursion.RecPalindrome(test8)?test8+ " is Palindrome":test8+" isn't Palindrome");
+        System.out.println(Recursion.RecPalindrome(test9)?test9+ " is Palindrome":test9+" isn't Palindrome");
     }
 }
